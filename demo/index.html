@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <script src="./polyfills.5f7ff0696c9fd39407c6.js"></script>
+    <script src="./runtime.e227d1a0e31cbccbf8ec.js"></script>
+    <script src="./main.0f37d20c90b8cd3541c8.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <style>
+	  body {
+		font-family: 'Open Sans', sans-serif;
+	  }
+	  
+	  svg#sample1 {
+		fill: none;
+		stroke: black;
+	  }
+	  
+	  svg#sample2 {
+		fill: red;
+		stroke: green;
+	  }
+	  
+	  p {
+		font-size: 18px;
+	  }
+	  
+	  code {
+		background-color: #ece8e8;
+		padding: 5px 10px;
+	  }
+	  
+	  li {
+		margin: 5px 0;
+	  }
+  </style>
+  <body>
+  
+	<h2>CirclesSparkline WEB COMPONENT</h2>
+	<p> 
+		<strong><code>&#60;circles-sparkline&#47;&#62;</code></strong> is a web component that can be used in any website (you can use it in a pure JS, React, Angular, or VueJS website)
+	</p>
+	<p> 
+		Users can input a set of numbers and customize the sparkline width, height, and stroke width:
+	</p>
+	<p> 
+		<code>
+			&#60;circles-sparkline width="300" height="50" id="sample1" stroke-width="3" data="[10,20,5,15,2,35]" &#47;&#62;
+		</code>
+	</p>
+	
+	<br/>
+	
+	<div>
+		<h6>SAMPLE 1</h6>
+		<circles-sparkline width="300" height="50" id="sample1" stroke-width="3" data="[10,20,5,15,2,35]" /> 
+	</div>
+	
+	<div>
+		<h6>SAMPLE 2</h6>
+		<circles-sparkline width="300" height="50" id="sample2" stroke-width="5" data="[34,5,8,15,1]" />
+	</div>
+	
+	<br/>
+	
+	<h3><u>TECH DETAILS</u></h3>
+	
+	<p> 
+		Although this component was created using Angular, I thought it would be more flexible and useful if I export it as a web component.
+	</p>
+	<p> 
+		In order to build a new package of this component, follow the steps:
+	</p>
+	<ol>
+	  <li>Open a terminal and go to the path where <code>package.json</code> exists</li>
+	  <li>If node_modules is not existing, run <code>npm run install</code></li>
+	  <li>Run <code>npm run build</code></li>
+	  <li>After a successful build, go to the <code>dist/halo</code> folder and there should be three javascript files inside
+		 <ul>
+		  <li>main.xxxxxx.js</li>
+		  <li>polyfills.xxxxxx.js</li>
+		  <li>runtime.xxxxxx.js</li>
+		</ul>
+	  </li>
+	  <li>Use the three javascript in any websites and just call <code>&#60;circles-sparkline&#47;&#62;</code> as seen in this demo</li>
+	</ol>
+
+	<br />
+	
+	<address>
+		For any questions or issues, contact me at <a href="mailto:raberana@gmail.com">raberana@gmail.com</a><br> 
+		98225616
+	</address>
+  </body>
+</html>
